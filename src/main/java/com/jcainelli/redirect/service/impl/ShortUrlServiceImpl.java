@@ -30,6 +30,10 @@ public class ShortUrlServiceImpl implements ShortUrlService {
     @Autowired
     private UrlConvert urlConvert;
 
+    public ShortUrlServiceImpl(ShortUrlRepository repository){
+        this.repository = repository;
+    }
+
     @Override
     public ShortUrlVO save(final HttpServletRequest request, final String urlOrigin) {
         ShortUrlVO result = new ShortUrlVO();
