@@ -7,6 +7,9 @@ Encurta url em url encurtadas com redirecionamento
 * Derby 
 * Hibernate
 
+#### Compilar e executar no diretorio do arquivo pom.xml
+mvn spring-boot:run
+
 #### Compilar: 
 mvn clean package	
 
@@ -16,11 +19,11 @@ mvn dockerfile:build
 #### Visualizar imagem no Docker:
 docker image list
 
-### Executar Container Localmente
+### Executar no Container Localmente
 docker run -p 8080:8080 jcainelli/redirect --spring.profiles.active=dev
 
 ### Documentação Swagger:
 http://localhost:8080/doc/swagger-ui.html
 
 #### Parâmetros:
-* short.url.valid.time = Tempo em minutos de expiração de uma Url encurtada.
+* short.url.valid.time = Tempo em minutos de expiração de uma Url encurtada. Valor Default = 30
