@@ -20,7 +20,7 @@ mvn dockerfile:build
 docker image list
 
 ### Executar no Container Localmente
-docker run -p 8080:8080 jcainelli/redirect --spring.profiles.active=dev
+docker run -p 8080:8080 jeancainelli/redirect --spring.profiles.active=dev
 
 ### Documentação Swagger:
 http://localhost:8080/doc/swagger-ui.html

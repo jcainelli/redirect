@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.jcainelli</groupId>
     <artifactId>redirect</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>redirect</name>
     <description>Redirect - Projeto para encurtamento e redirecionamento de Urls</description>
@@ -92,7 +92,7 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.4.7</version>
+                <version>1.4.13</version>
                 <configuration>
                     <repository>jeancainelli/redirect</repository>
                     <tag>${project.version}</tag>

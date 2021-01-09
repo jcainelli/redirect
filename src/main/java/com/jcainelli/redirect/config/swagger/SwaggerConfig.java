@@ -35,7 +35,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 
     private ApiInfo apiEndPointsInfo() {
         return new ApiInfoBuilder().title("Encurtador de Url - API")
-            .description("Serviço para encurtar e atender requisições em urls encurtadas (redirecionamento)")
+            .description("Serviço para encurtar e atender requisições em urls encurtadas (redirecionamento).")
             .contact(new Contact("Jean Cainelli","http://github.com/jcainelli","jcainelli@gmail.com"))
             .version("1.0.0")
             .build();
